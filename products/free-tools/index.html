@@ -15,11 +15,11 @@
 <meta property="og:url" content="https://incidentlabs.tools/products/free-tools/" />
 <meta property="og:site_name" content="Incident Labs" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2026-07-27T15:00:46+10:00" />
+<meta property="article:published_time" content="2026-07-28T00:21:45+10:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Free Tools" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-07-27T15:00:46+10:00","datePublished":"2026-07-27T15:00:46+10:00","description":"Precision colour-science tools for DaVinci Resolve — DCTLs and shooting LUTs engineered for colourists, cinematographers, and editors.","headline":"Free Tools","mainEntityOfPage":{"@type":"WebPage","@id":"https://incidentlabs.tools/products/free-tools/"},"url":"https://incidentlabs.tools/products/free-tools/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2026-07-28T00:21:45+10:00","datePublished":"2026-07-28T00:21:45+10:00","description":"Precision colour-science tools for DaVinci Resolve — DCTLs and shooting LUTs engineered for colourists, cinematographers, and editors.","headline":"Free Tools","mainEntityOfPage":{"@type":"WebPage","@id":"https://incidentlabs.tools/products/free-tools/"},"url":"https://incidentlabs.tools/products/free-tools/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,6 +35,16 @@
 </head>
 
   <body>
+    
+<div id="cookie-consent" class="cookie-consent" hidden>
+  <p class="cookie-consent__text">We use cookies for basic, aggregated analytics. See our <a href="/legal/#privacy">Privacy Policy</a>.</p>
+  <div class="cookie-consent__actions">
+    <button type="button" class="btn btn--ghost btn--nav" id="cookie-decline">Decline</button>
+    <button type="button" class="btn btn--solid btn--nav" id="cookie-accept">Accept</button>
+  </div>
+</div>
+
+
     <div class="page">
       
 <nav class="nav" aria-label="Main navigation">
@@ -292,6 +302,30 @@
 
     </div>
       <script src="/js/app.min.js"></script>
+
+  <script>
+    (function() {
+      var host = location.hostname;
+      if (host === 'localhost' || host === '127.0.0.1') { return; }
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      window.gtag = gtag;
+      window.loadGoogleAnalytics = function() {
+        if (window.__gaLoaded) { return; }
+        window.__gaLoaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-C2J7V55R5G';
+        document.head.appendChild(s);
+        gtag('js', new Date());
+        gtag('config', 'G-C2J7V55R5G');
+      };
+      if (localStorage.getItem('cookie-consent') === 'granted') {
+        window.loadGoogleAnalytics();
+      }
+    })();
+  </script>
+
 
   </body>
 </html>

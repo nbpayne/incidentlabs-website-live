@@ -34,6 +34,16 @@
 </head>
 
   <body>
+    
+<div id="cookie-consent" class="cookie-consent" hidden>
+  <p class="cookie-consent__text">We use cookies for basic, aggregated analytics. See our <a href="/legal/#privacy">Privacy Policy</a>.</p>
+  <div class="cookie-consent__actions">
+    <button type="button" class="btn btn--ghost btn--nav" id="cookie-decline">Decline</button>
+    <button type="button" class="btn btn--solid btn--nav" id="cookie-accept">Accept</button>
+  </div>
+</div>
+
+
     <div class="page">
       
 <nav class="nav" aria-label="Main navigation">
@@ -260,6 +270,30 @@
 
     </div>
       <script src="/js/app.min.js"></script>
+
+  <script>
+    (function() {
+      var host = location.hostname;
+      if (host === 'localhost' || host === '127.0.0.1') { return; }
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      window.gtag = gtag;
+      window.loadGoogleAnalytics = function() {
+        if (window.__gaLoaded) { return; }
+        window.__gaLoaded = true;
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-C2J7V55R5G';
+        document.head.appendChild(s);
+        gtag('js', new Date());
+        gtag('config', 'G-C2J7V55R5G');
+      };
+      if (localStorage.getItem('cookie-consent') === 'granted') {
+        window.loadGoogleAnalytics();
+      }
+    })();
+  </script>
+
 
   </body>
 </html>
