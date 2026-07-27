@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Incident Labs">
+  <rect width="160" height="160" rx="24" ry="24" fill="#1C1C21"/>
+  <circle cx="38"  cy="80" r="13" fill="#FF5555"/>
+  <circle cx="80"  cy="80" r="13" fill="#4ADE80"/>
+  <circle cx="122" cy="80" r="13" fill="#60A5FA"/>
+</svg>
