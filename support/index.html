@@ -378,7 +378,7 @@
       </div>
     </div>
     <div class="card" style="padding:0;overflow:hidden">
-      <form class="contact-form" id="contact-form" novalidate>
+      <form class="contact-form" id="contact-form" novalidate action="https://submit-form.com/BzZ84ySRP" method="POST" data-fallback-email="support@incidentlabs.tools">
         <div class="form-grid">
           <label class="field">
             <span class="field-label">Name</span>
@@ -431,10 +431,12 @@
           <textarea class="inp inp-area" name="message" rows="5" placeholder="Describe your setup, the Resolve version, and what you are seeing."></textarea>
           <span class="field-error mono" id="err-message"></span>
         </label>
+        <input type="hidden" name="_email.subject" value="">
         <div class="row" style="justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
           <span class="mono muted" style="font-size:12px">We will only use your email to reply.</span>
-          <button class="btn btn--solid" type="submit">Send message</button>
+          <button class="btn btn--solid" type="submit" id="contact-submit">Send message</button>
         </div>
+        <span class="field-error mono" id="err-submit" style="display:block;margin-top:12px;text-align:right"></span>
       </form>
       <div class="form-success" id="contact-success" style="display:none">
         <div class="success-dot"><span>✓</span></div>
